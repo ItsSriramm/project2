@@ -2,6 +2,8 @@ import './App.css';
 import React, { useState } from "react";
 import Header from './Components/Header';
 import Card from './Components/Card';
+import Searching from'./Components/Searching';
+
 import images1 from './assets/Germany.png';
 import images2 from './assets/unitedstates.png';
 import images3 from './assets/brazil.png';
@@ -28,12 +30,16 @@ function App() {
     <div
       style={{
         backgroundColor: colors.bgColor,
-        color: colors.fontColor, // Dynamic font color
+        color: colors.fontColor, 
         height: "350vh",
         transition: "background-color 0.5s ease, color 0.5s ease",
       }}
     >
       <Header onToggleMode={toggleColors} />
+      <div>
+        <Searching/>
+      </div>
+      
       <div className='App'>
         <Card
           title="Germany"
@@ -92,6 +98,7 @@ function App() {
           capital="Algiers"
         />
       </div>
+     
     </div>
   );
 }

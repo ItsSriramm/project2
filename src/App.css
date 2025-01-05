@@ -4,8 +4,3 @@
 .bg-primary{
   background-color: #34495e ;
 } 
-.App {
-  display: flex;
-  justify-content: center;
-  padding-top: 50px; /* Adjust vertical spacing */
-}
